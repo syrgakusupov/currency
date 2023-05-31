@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./currency.css">
+</head>
+<body>
+    <h1></h1>
+    <div class="block">
+
+        <section class="section-binance">
+            <main>
+               <section id="crypto-section" class="container center-align">
+                   <table id="crypto-table" class="highlight centered">
+                       <ul>
+                            <h1 style="color: #9297A0;">#</h1>
+                           <h1 style="margin-left: 40px;">Наименование</h1>
+                           <h1 style="margin-left: 230px;">Цена</h1>
+                           <h1 style="margin-left: 90px;">24 ч.</h1>
+                           <h1 style="margin-left: 55px;">7 дн.</h1>
+                       </ul><hr>
+                       <tbody id="crypto-table-body">
+                       </tbody>
+                   </table>
+                   <div id="pagination">
+                       <ul class="pagination">
+                           <li class="disabled arrow-left"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                           <li class="active"><a>1</a></li>
+                           <li class="waves-effect"><a>2</a></li>
+                           <li class="waves-effect"><a>3</a></li>
+                           <li class="waves-effect"><a>4</a></li>
+                           <li class="waves-effect"><a>5</a></li>
+                           <li class="waves-effect"><a>6</a></li>
+                           <li class="waves-effect"><a>7</a></li>
+                           <li class="waves-effect"><a>8</a></li>
+                           <li class="waves-effect"><a>9</a></li>
+                           <li class="waves-effect"><a>10</a></li>
+                           <li class="waves-effect arrow-right"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                       </ul>
+                   </div>
+               </section>
+           </main>
+       </section>
+   
+   
+   
+       
+       
+       <section class="container">
+           
+   
+   
+           <div class="div_currency">
+
+            <div class="block_currency">
+                <p>22.22.2222</p>
+                <div class="result">
+                    <div class="rate" id="rate"></div>
+    
+            </div>
+            
+                <div class="currency">
+                
+                    <input type="number" name="" id="input_amount" value="1">
+                    
+                    <select name="" id="input_currency">
+                        <option value="KGS">Кыргызский сом</option>
+                        <option value="USD" selected>Доллар США</option>
+                        <option value="RUB">Рубль</option>
+                        <option value="EUR">Евро</option>
+                        <option value="KZT">Тенге</option>
+                        <option value="TRY">Лира</option>
+                        <option value="CNY">Йены</option>
+                    </select>
+                </div>
+            
+                <div class="currency">
+                
+                    <input type="number" name="" id="output_amount" placeholder="0"/>
+                    <select name="" id="output_currency">
+                        <option value="KGS" selected>Кыргызский сом</option>
+                        <option value="USD" >Доллар США</option>
+                        <option value="RUB">Рубль</option>
+                        <option value="EUR">Евро</option>
+                        <option value="KZT">Тенге</option>
+                        <option value="TRY">Лира</option>
+                        <option value="CNY">Йены</option>
+                </select>
+            
+            </div>
+                
+            
+        </div>
+           </div>
+       </section>
+   
+
+    </div>
+
+    <script src="./currency.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #2C2C2C;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.section-binance{
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    width: 50%;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    height: 58px;
+    align-items: center;
+}
+ul h1{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagination{
+    display: flex;
+
+}
+.pagination li{
+    list-style: none;
+    align-items: center;
+}
+hr{
+    position: absolute;
+    width: 43%;
+    color: #E9E9E9;
+}
+td{
+    line-height: 50px;
+   
+}
+.green-text{
+    width: 90px;
+    color: #16C784;
+    font-size: 18px;
+   font-family: 'Inter', sans-serif;
+}
+
+.red-text{
+    width: 90px;
+    color: #EA3943;
+    font-size: 18px;
+   font-family: 'Inter', sans-serif;
+}
+
+.name-text{
+   font-size: 18px;
+   font-family: 'Inter', sans-serif;
+   width: 350px;
+}
+.price-text{
+    width: 120px;
+    font-size: 18px;
+   font-family: 'Inter', sans-serif;
+}
+.rank-text{
+    width: 6%;
+    color: #9297A0;
+    font-size: 18px;
+   font-family: 'Inter', sans-serif;
+}
+.active{
+    background-color: aqua;
+}
+
+
+.div_currency{
+    background-color: #FFFFFF;
+    width: 383px;
+    height: 304px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.block_currency{
+    display: grid;
+    gap: 30px;
+}
+.rate{
+    font-size: 30px;
+}
+.currency{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E2E2E2;
+    height: 40px;
+    width: 265px;
+    border-radius: 32px;
+}
+.currency input{
+    width: 100px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.currency input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.currency select{
+    border: none;  
+    outline: none;
+    font-size: 16px;
+}
+.currency option{
+    position: absolute;
+    
+}
