@@ -172,6 +172,7 @@ pageLinks.forEach((element) => {
 
 
 
+
 const input_currency = document.querySelector('#input_currency');
 const output_currency = document.querySelector('#output_currency');
 const input_amount = document.querySelector('#input_amount');
@@ -205,4 +206,97 @@ function compute(){
 
 compute();
 
+document.addEventListener('DOMContentLoaded', async function () {
+    const response = await fetch('https://v6.exchangerate-api.com/v6/53ffeff27f52df4dbb8957cc/latest/USD')
+    const data = await response.json()
+    return showData(data)
+});
+document.addEventListener('DOMContentLoaded', async function () {
+    const response = await fetch('https://v6.exchangerate-api.com/v6/53ffeff27f52df4dbb8957cc/latest/EUR')
+    const data = await response.json()
+    return showEur(data)
+});
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const response = await fetch('https://v6.exchangerate-api.com/v6/53ffeff27f52df4dbb8957cc/latest/RUB')
+    const data = await response.json()
+    return showRub(data)
+});
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const response = await fetch('https://v6.exchangerate-api.com/v6/53ffeff27f52df4dbb8957cc/latest/TRY')
+    const data = await response.json()
+    return showTry(data)
+});
+document.addEventListener('DOMContentLoaded', async function () {
+    const response = await fetch('https://v6.exchangerate-api.com/v6/53ffeff27f52df4dbb8957cc/latest/KZT')
+    const data = await response.json()
+    return showKzt(data)
+});
+document.addEventListener('DOMContentLoaded', async function () {
+    const response = await fetch('https://v6.exchangerate-api.com/v6/53ffeff27f52df4dbb8957cc/latest/CNY')
+    const data = await response.json()
+    return showCny(data)
+});
+
+
+const showData = (data) => {
+    let display = document.getElementById('description-currency')
+    let show = ''
+
+    show += `<td class='rank-text1 text-darken-4'>${data.base_code}</td>`
+    show += `<td class='rank-text2 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)}</td>`
+    show += `<td class='rank-text3 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)+9}</td>`
+
+    display.innerHTML = show
+};
+const showEur = (data) => {
+    let display = document.getElementById('description-currencyEur')
+    let show = ''
+
+    show += `<td class='rank-text1 text-darken-4'>${data.base_code}</td>`
+    show += `<td class='rank-text2 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)}</td>`
+    show += `<td class='rank-text3 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)+9}</td>`
+
+    display.innerHTML = show
+}
+
+const showRub = (data) => {
+    let display = document.getElementById('description-currencyRub')
+    let show = ''
+
+    show += `<td class='rank-text1 text-darken-4'>${data.base_code}</td>`
+    show += `<td class='rank-text2 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)}</td>`
+    show += `<td class='rank-text3 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)+1}</td>`
+    display.innerHTML = show
+}
+const showTry = (data) => {
+    let display = document.getElementById('description-currencyTry')
+    let show = ''
+
+    show += `<td class='rank-text1 text-darken-4'>${data.base_code}</td>`
+    show += `<td class='rank-text2 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)}</td>`
+    show += `<td class='rank-text3 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)+3}</td>`
+    display.innerHTML = show
+}
+
+const showKzt = (data) => {
+    let display = document.getElementById('description-currencyKzt')
+    let show = ''
+
+    show += `<td class='rank-text1 text-darken-4'>${data.base_code}</td>`
+    show += `<td class='rank-text2 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)}</td>`
+    show += `<td class='rank-text3 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)+3}</td>`
+    display.innerHTML = show
+}
+
+const showCny = (data) => {
+    let display = document.getElementById('description-currencyCny')
+    let show = ''
+
+    show += `<td class='rank-text1 text-darken-4'>${data.base_code}</td>`
+    show += `<td class='rank-text2 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)}</td>`
+    show += `<td class='rank-text3 text-darken-4'>${data.conversion_rates.KGS.toFixed(1)+3}</td>`
+    display.innerHTML = show
+}
 
